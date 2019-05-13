@@ -2,7 +2,7 @@ const router = require('koa-router')()
 const {getPermissions, indexUrl} = require('./../config/configuration')
 
 const {getUser, postUser, deleteUser, putUser} = require('./index/users')
-const {postType, deleteType, putType, getType} = require('./index/type')
+const {getType, postType, deleteType, putType} = require('./index/type')
 const {getImage} = require('./index/image')
 const {getAllPermissions} = require('./index/permissions')
 const {postSwipt, deleteSwipt, putSwipt, getSwipt} = require('./index/swipt')
@@ -10,6 +10,7 @@ const {postNavbar, deleteNavbar, putNavbar, getNavbar} = require('./index/navbar
 const {getNew, postNew, putNew, deleteNew} = require('./index/new')
 const {getFriendship, postFriendship, putFriendship, deleteFriendship} = require('./index/friendship')
 const {getComments, postComments, putComments, deleteComments} = require('./index/comments')
+const {getDiarys} = require('./index/diarys')
 
 router.prefix(`/index`);
 
@@ -95,13 +96,13 @@ router.post(`${indexUrl}/friendship`, postFriendship);
 
 //TODO new 的权限操作
 
-router.get(`${indexUrl}/new`, getNew);
+router.get(`${indexUrl}/news`, getNew);
 
-router.post(`${indexUrl}/new`, postNew);
+router.post(`${indexUrl}/news`, postNew);
 
-router.put(`${indexUrl}/new`, putNew);
+router.put(`${indexUrl}/news`, putNew);
 
-router.delete(`${indexUrl}/new`, deleteNew);
+router.delete(`${indexUrl}/news`, deleteNew);
 
 //TODO comment 的权限操作
 router.get(`${indexUrl}/comments`, getComments);
@@ -111,5 +112,9 @@ router.post(`${indexUrl}/comments`, postComments);
 router.put(`${indexUrl}/comments`, putComments);
 
 router.delete(`${indexUrl}/comments`, deleteComments);
+
+//TODO 获取日志信息
+
+router.get(`${indexUrl}/diarys`, getDiarys)
 
 module.exports = router

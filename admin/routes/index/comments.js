@@ -1,6 +1,7 @@
 const friendshipLinkModel = require('./../../models/getFriendshipLink');
 const commmentListModel = require('./../../models/getComments');
 const userInfoModel = require('./../../models/getUserInfo');
+const newListModel = require('./../../models/getNewList');
 const {getPermissions} = require('./../../config/configuration')
 
 let getComments = async (ctx, next) => {

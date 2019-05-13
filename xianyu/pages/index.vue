@@ -84,14 +84,14 @@
 
       let [swiptList, userInfo, newList,type] = await Promise.all([
         //获取轮播列表信息
-        axios.get(`/api/index/api/v1/index/getSwiptList`),
+        axios.get(`/api/index/api/v1/index/swipt`),
         //获取用户信息
-        axios.get(`/api/index/api/v1/index/getUserInfo`),
+        axios.get(`/api/index/api/v1/index/users`),
 
         //获取最新文章列表
-        axios.get(`/api/index/api/v1/index/getNewList?title=${search.title || ''}&type=${search.type || ''}`),
+        axios.get(`/api/index/api/v1/index/news?title=${search.title || ''}&type=${search.type || ''}`),
         //当前分类信息
-        axios.get(`/api/index/api/v1/index/getType?type=${context.query.type||''}`),
+        axios.get(`/api/index/api/v1/index/types?type=${context.query.type||''}`),
 
         //获取日志
       ])
@@ -124,7 +124,6 @@
         },
         typeId:'',
         title:'',
-        html:'1<img src="http://localhost:3001/upload/20190416/jpg1555428322000.jpg"/>'
       }
     },
     methods: {
@@ -136,7 +135,7 @@
         }else{
           type=''
         }
-        axios.get(`/api/index/api/v1/index/getNewList?title=${value}&page=${page}&type=${type}`).then(res => {
+        axios.get(`/api/index/api/v1/index/new?title=${value}&page=${page}&type=${type}`).then(res => {
           this.newList = res.data;
           this.search = {
             state: true,

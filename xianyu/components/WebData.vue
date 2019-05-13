@@ -225,21 +225,21 @@
     methods:{
       //阅读量排行
       showComment:function () {
-        axios.get(`/api/index/api/v1/index/getNewList?commentNumber=true`).then(res=>{
+        axios.get(`/api/index/api/v1/index/news?commentNumber=true`).then(res=>{
           this.readingNumber=res.data.data;
           this.readyState=false;
         });
       },
       //评论排行
       showClick:function () {
-        axios.get(`/api/index/api/v1/index/getNewList?readingNumber=true`).then(res=>{
+        axios.get(`/api/index/api/v1/index/news?readingNumber=true`).then(res=>{
           this.readingNumber=res.data.data;
           this.readyState=true;
         });
       },
       //显示当前评论
       getComment:function () {
-        axios.get(`/api/index/api/v1/index/getComments`).then(res=>{
+        axios.get(`/api/index/api/v1/index/comments`).then(res=>{
           this.comentList=res.data.data;
         })
       },
@@ -249,13 +249,13 @@
         window.history.pushState({
           title: ''
         }, '', `${window.location.origin}?title=${this.searchValue}&page=1`)
-        this.$router.push(`/?title=${this.searchValue}&page=1`)
+        this.$router.push(`/`)
       },
       routerPush:function (id) {
         this.$router.push(`/newInfo/${id}`);
       },
       refresh:function () {
-        this.$axios.get(`/api/index/api/v1/index/getDiarys`).then(res=>{
+        this.$axios.get(`/api/index/api/v1/index/diarys`).then(res=>{
           this.diaryList=res.data.data;
         });
 

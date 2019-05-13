@@ -151,7 +151,7 @@
     },
     methods:{
       refresh(){
-        axios.get(`/api/index/api/v1/index/getNavbarInfo`).then(res=>{
+        axios.get(`/api/index/api/v1/index/navbar`).then(res=>{
           this.navbarInfo=res.data.data;
         })
       },

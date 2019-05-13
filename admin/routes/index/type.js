@@ -2,35 +2,41 @@ const typeModel = require('./../../models/getTypeList');
 const {getPermissions} = require('./../../config/configuration')
 
 let getType = async (ctx, next) => {
-    let name = ctx.request.query.name || '';
-    let page = ctx.request.query.page - 1 || 0;
-    // let type=ctx.request.query.type;
-    // let sql='';
-    // if (type!=''){
-    //     //     sql={name: {$regex: name},_id:type}
-    //     // }else{
-    //     //     sql={name: {$regex: name}}
-    //     // }
-    let sql='';
-    if (name){
-        sql={name: {$regex: name}};
-    } else{
-        sql={}
+    ctx.body={
+        code:200,
+        message:'成功'
     }
-
-    let list = await typeModel.find(sql)
-        .limit(10)
-        .skip(10 * page);
-    let number = 0;
-    let count = await typeModel.count(sql, (error, count) => {
-        number = count;
-    })
-    ctx.body = {
-        code: 200,
-        message: '查询成功',
-        data: list,
-        totalNumber: number
-    };
+    // let name = ctx.request.query.name || '';
+    // let page = ctx.request.query.page - 1 || 0;
+    // let id=ctx.request.query.type;
+    // // let type=ctx.request.query.type;
+    // // let sql='';
+    // // if (type!=''){
+    // //     //     sql={name: {$regex: name},_id:type}
+    // //     // }else{
+    // //     //     sql={name: {$regex: name}}
+    // //     // }
+    // let sql='';
+    // if (name){
+    //     // sql={name: {$regex: name}};
+    // }
+    // // if (id){
+    // //     sql={_id:id}
+    // // }
+    //
+    // let list = await typeModel.find(sql)
+    //     .limit(10)
+    //     .skip(10 * page);
+    // let number = 0;
+    // let count = await typeModel.count(sql, (error, count) => {
+    //     number = count;
+    // })
+    // ctx.body = {
+    //     code: 200,
+    //     message: '查询成功',
+    //     data: list,
+    //     totalNumber: number
+    // };
 }
 
 let deleteType = async (ctx, next) => {

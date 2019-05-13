@@ -1,4 +1,7 @@
 const newListModel = require('./../../models/getNewList');
+const typeModel = require('./../../models/getTypeList');
+const commmentListModel = require('./../../models/getComments');
+const userInfoModel=require('./../../models/getUserInfo');
 const {getPermissions} = require('./../../config/configuration')
 
 let getNew = async (ctx, next) => {
@@ -34,11 +37,24 @@ let getNew = async (ctx, next) => {
     // }
 
     let list = await newListModel.find(sql)
-        // .populate({
-        //     path: 'typeList',
-        //     model: typeModel,
-        //     select: 'name'
-        // })
+        .populate({
+            path: 'typeList',
+            model: typeModel,
+            select: 'name'
+        })
+        .populate({
+            path:'commentList',
+            model:commmentListModel,
+            select:'',
+            populate:({
+                path:'replyList',
+                model: commmentListModel,
+            },{
+                path: 'userData',
+                model: userInfoModel,
+                select: 'userName sex userImage'
+            })
+        })
             .sort(sort)
             .limit(10)
             .skip(10 * page)
