@@ -13,6 +13,7 @@
           <v-flex xs12 class="spancer hidden-sm-and-down"></v-flex>
           <v-flex xs12 sm7 md8>
             <v-layout wrap row align-content-center>
+              <!--{{ newInfo[0] }}-->
               <v-flex class="white xs12 text--center newInfo pa-3" v-if="newInfo instanceof Object">
                 <p class="headline mt-2 font-weight-medium newInfo--header">
                   {{ newInfo.title }}
@@ -124,7 +125,6 @@
 <script>
   import WebData from '~/components/WebData.vue'
   import Pagination from '~/components/Pagination.vue'
-  import NewList from '~/components/NewList.vue'
   import axios from 'axios';;
 
 
@@ -138,28 +138,26 @@
     async asyncData(context) {
       let url = '';
       if (!context.params.id) {
-        url = `/api/index/api/v1/index/getNewInfo`
+        url = `/api/index/api/v1/index/news`
       } else {
-        url = `/api/index/api/v1/index/getNewInfo?id=${context.params.id}`
+        url = `/api/index/api/v1/index/news?id=${context.params.id}`
       }
 
-      let [newInfo, userInfo,getSwiptList] = await Promise.all([
+      let [newInfo] = await Promise.all([
         //获取轮播列表信息
         axios.get(url),
 
-        axios.get(`/api/index/api/v1/index/getUserInfo`),
+
         // getSwiptList()
       ])
 
       return {
-        newInfo: newInfo.data.data,
-        userInfo: userInfo.data.data,
+        newInfo: newInfo.data.data[0],
 
       }
     },
     components: {
       WebData,
-      NewList,
       Pagination
     },
     $_veeValidate: {
@@ -213,7 +211,7 @@
       submit() {
         this.$validator.validateAll().then(result=>{
           if (result){
-            this.$axios.post('/api/index/api/v1/index/getComments',{
+            this.$axios.post('/api/index/api/v1/index/comments',{
               newId:this.$route.params.id,
               content:this.content,
               userName:this.name,
@@ -232,8 +230,8 @@
         this.$validator.reset()
       },
       refresh:function () {
-        this.$axios.get(`/api/index/api/v1/index/getNewInfo?id=${this.$route.params.id}`).then(res=>{
-          this.newInfo=res.data.data;
+        this.$axios.get(`/api/index/api/v1/index/news?id=${this.$route.params.id}`).then(res=>{
+          this.newInfo=res.data.data[0];
         })
       }
     },
@@ -247,7 +245,7 @@
 <style lang="scss" scoped>
   .text--pink {
     color: pink;
-  }NewList
+  }
 
   .searchValue {
     background: white;

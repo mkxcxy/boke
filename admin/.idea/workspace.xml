@@ -2,15 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="debd94db-a3f7-417a-b9ff-546491e99fbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/index/diarys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index/comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index/type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xianyu/components/WebData.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../xianyu/components/WebData.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xianyu/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../xianyu/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../xianyu/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../xianyu/pages/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../xianyu/pages/newInfo/_id.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../xianyu/pages/newInfo/_id.vue" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -186,7 +177,7 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1400" />
@@ -360,12 +351,12 @@
       <workItem from="1557697621471" duration="1103000" />
       <workItem from="1557701985457" duration="1414000" />
       <workItem from="1557703546424" duration="3000" />
-      <workItem from="1557708213012" duration="2937000" />
+      <workItem from="1557708213012" duration="3109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="320317000" />
+    <option name="totallyTimeSpent" value="320489000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
