@@ -63,5 +63,6 @@ module.exports = {
     uploadUrl,
     jwtKey,
     getPermissions,
-    indexUrl
+    indexUrl,
+    getJWTPayload
 }

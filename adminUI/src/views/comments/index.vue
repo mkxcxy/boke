@@ -126,7 +126,7 @@
         },
         methods: {
             //页面刷新触发函数
-            refresh: function (page=1,id='') {
+            refresh: function (searchValue,page=1,id='') {
                 this.loading = true;
                 getComments(page,id).then(res => {
                     // debugger

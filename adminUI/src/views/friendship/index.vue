@@ -11,8 +11,10 @@
             </el-table-column>
             <el-table-column
                     label="提交用户"
-                    prop="name"
             >
+                <template slot-scope="scope">
+                    <span @click="$router.push(`/permissions/${scope.row._id}`)">{{ scope.row.name }}</span>
+                </template>
             </el-table-column>
             <el-table-column
                     label="链接"

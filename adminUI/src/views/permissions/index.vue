@@ -223,6 +223,7 @@
             getPrmissions().then(res => {
                 this.prmissionsList = res.data;
             });
+            console.log(this.$route.params)
             this.refresh();
         }
     }

@@ -1,7 +1,7 @@
 const userInfoModel = require('./../../models/getUserInfo');
 const permissionsModel = require('./../../models/getPermissions');
 const typeModel= require('./../../models/getTypeList');
-const {getPermissions} = require('./../../config/configuration')
+const {getPermissions,getJWTPayload} = require('./../../config/configuration')
 
 let getUser = async (ctx, next) => {
     getPermissions(ctx);
@@ -73,6 +73,9 @@ let postUser = async (ctx, next) => {
                     createAt: new Date(),
                     updataAt: new Date()
                 }
+                if (!body.sex){
+                    body.sex=true;
+                }
                 userInfoModel.create(body, (error, docs) => {
                 });
                 ctx.body = {
@@ -105,7 +108,7 @@ let putUser=async (ctx, next) => {
             {_id: ctx.request.body._id},
             {
                 userName: userName,
-                sex: sex || false,
+                sex: sex | false,
                 userImage: userImage || "http://localhost:3001/images/default.jpg",
                 meta: {
                     createAt: meta.createAt || new Date(),
@@ -123,10 +126,26 @@ let putUser=async (ctx, next) => {
     }
 }
 
+let postUserInfo=async (ctx, next) => {
+    getPermissions(ctx);
+    let payload = getJWTPayload(ctx.headers.authorization,ctx);
+    let list=await userInfoModel.findOne({_id:payload._id});
+    // console.log(payload.permissions)
+    if (!ctx.body) {
+        ctx.body = {
+            code: 200,
+            message: 'token未过期',
+            data: list,
+            permissions:payload.permissions
+        };
+    }
+}
+
 module.exports = {
     getUser,
     postUser,
     deleteUser,
-    putUser
+    putUser,
+    postUserInfo
 }
 

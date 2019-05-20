@@ -2,9 +2,14 @@ const typeModel = require('./../../models/getTypeList');
 const {getPermissions} = require('./../../config/configuration')
 
 let getType = async (ctx, next) => {
+    let list=await typeModel.find();
+    // let count = await typeModel.count(sql, (error, count) => {
+    //     number = count;
+    // })
     ctx.body={
         code:200,
-        message:'成功'
+        message:'成功',
+        data:list
     }
     // let name = ctx.request.query.name || '';
     // let page = ctx.request.query.page - 1 || 0;

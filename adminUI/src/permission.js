@@ -27,7 +27,7 @@ router.beforeEach((to, from, next) => {
         if (whiteList.indexOf(to.path) !== -1) {
             next()
         } else {
-            Message.success('成功登出');
+            Message.success('请先登录');
             next('/login')
             NProgress.done()
         }

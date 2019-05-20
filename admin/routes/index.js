@@ -1,7 +1,7 @@
 const router = require('koa-router')()
 const {getPermissions, indexUrl} = require('./../config/configuration')
 
-const {getUser, postUser, deleteUser, putUser} = require('./index/users')
+const {getUser, postUser, deleteUser, putUser,postUserInfo} = require('./index/users')
 const {getType, postType, deleteType, putType} = require('./index/type')
 const {getImage} = require('./index/image')
 const {getAllPermissions} = require('./index/permissions')
@@ -14,16 +14,7 @@ const {getDiarys} = require('./index/diarys')
 
 router.prefix(`/index`);
 
-router.post(`${indexUrl}/`, async (ctx, next) => {
-    getPermissions(ctx);
-    if (!ctx.body) {
-        ctx.body = {
-            code: 200,
-            message: 'token未过期',
-            data: null
-        };
-    }
-})
+router.post(`${indexUrl}/`, postUserInfo)
 
 //TODO user权限操作
 //获取用户以及用户权限信息

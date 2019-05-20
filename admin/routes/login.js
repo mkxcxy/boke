@@ -16,12 +16,13 @@ router.post(`${loginUrl}/`, async ctx => {
     const result=await userInfoModel.find({
         userName:data.userName,
         password:data.password
-    },{'comments': 0, 'password': 0, '_id': 0}).populate({
+    },{'comments': 0, 'password': 0}).populate({
         path: 'permissions',
         model: permissionsModel,
         select: 'name'
     })
     if (result.length!=0){
+        // console.log(result[0])
         let token=jwt.sign({
             _id:result[0]._id,
             permissions:result[0].permissions.name

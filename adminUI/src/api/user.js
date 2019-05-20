@@ -4,7 +4,7 @@ import service from "../utils/request";
 //获取权限列表
 export function getPrmissions() {
     return service.request({
-        url:"/index/api/v1/permissions/index",
+        url:"/index/api/v1/index/types",
         method:'get',
         headers:{
             'authorization':window.localStorage.getItem('token')
@@ -26,7 +26,7 @@ export function getUsers(name,page) {
 //用户操作
 export function userHandle(data,method) {
     return service.request({
-        url:"/permissions/api/v1/permissions/users",
+        url:"/index/api/v1/index/users",
         method:method,
         headers:{
             'authorization':window.localStorage.getItem('token')

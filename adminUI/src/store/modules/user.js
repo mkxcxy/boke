@@ -14,15 +14,15 @@ const user = {
         SET_USERDATA: (state, token) => {
             state.userData = token;
         },
-        SET_TOKEN: (state, token) => {
-            state.token = token
-        },
-        SET_NAME: (state, name) => {
-            state.name = name
-        },
-        SET_AVATAR: (state, avatar) => {
-            state.avatar = avatar
-        },
+        // SET_TOKEN: (state, token) => {
+        //     state.token = token
+        // },
+        // SET_NAME: (state, name) => {
+        //     state.name = name
+        // },
+        // SET_AVATAR: (state, avatar) => {
+        //     state.avatar = avatar
+        // },
         SET_ROLES: (state, roles) => {
             state.roles = roles
         }
@@ -38,10 +38,14 @@ const user = {
         GetInfo({commit, state}) {
             return new Promise((resolve, reject) => {
                 getInfo().then(response => {
-                    const data = response;
+                    let data = response;
                     if (data.code != '200') { // 验证当前jwt是否合法
                         reject(data.message);
                     }
+                    // console.log(data.data.userName)
+                    commit('SET_USERDATA', data.data)
+                    commit('SET_ROLES', data.permissions)
+                    // console.log(data)
                     resolve(response)
                 }).catch(error => {
                     reject(error)

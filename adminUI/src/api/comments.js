@@ -4,7 +4,7 @@ import service from "../utils/request";
 //获取类别列表
 export function getComments(page=1,id='') {
     return service.request({
-        url:`/index/api/v1/index/comments?name=${page}&id=${id}`,
+        url:`/index/api/v1/index/comments?id=${id}&page=${page}`,
         method:'get',
         headers:{
             'authorization':window.localStorage.getItem('token')

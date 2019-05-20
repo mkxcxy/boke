@@ -5,15 +5,6 @@
             <el-col :span="12">
                 <el-button type="primary" icon="el-icon-plus" size="small" @click="add()">新增</el-button>
             </el-col>
-            <el-col :span="12" class="text--right">
-                <el-input
-                        v-model="searchValue"
-                        placeholder="请输入内容"
-                        suffix-icon="el-icon-search"
-                        @keydown.native.enter="searchUser()"
-                >
-                </el-input>
-            </el-col>
         </el-row>
         <br class="hidden-xs-only">
         <el-table
@@ -53,7 +44,6 @@
                 </template>
             </el-table-column>
         </el-table>
-        <Pagination :totalNumber="totalNumber" :searcValue="searchValue"></Pagination>
         <!--弹出框-->
         <el-dialog :title="title" :visible.sync="dialogFormVisible">
             <el-form class="pl-1  ">
@@ -111,11 +101,6 @@
                 this.method='post';
                 this.dialogFormVisible = true;
             },
-            //删除已上传的图片
-            handleRemove: function () {
-
-            },
-            //提交表单信息
             submit: function () {
                 let that = this;
                 typeHandle(that.form,that.method).then(res => {
@@ -124,7 +109,7 @@
                     that.refresh();
                 })
             },
-            //删除单个用户（非管理）
+            //删除单个
             handleDelete: function (id) {
                 let that = this;
                 this.$confirm('此操作将永久删除该类别, 是否继续?', '提示', {

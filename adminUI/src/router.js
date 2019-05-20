@@ -31,11 +31,11 @@ export const constantRouterMap = [
         component: Layout,
         children: [
             {
-                path: 'index',
+                path: ':id',
                 name: 'Permissions',
                 component: () => import('@/views/permissions/index'),
                 meta: {title: '权限', icon: 'el-icon-search'}
-            }
+            },
         ]
     },
 
