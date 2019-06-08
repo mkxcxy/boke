@@ -19,9 +19,6 @@ let getUser = async (ctx, next) => {
             .skip(10 * page);
         let number = 0;
         let count = await userInfoModel.count({userName: {$regex: name}}, (error, count) => {
-            // if(err) next(err);
-            // res.render('articleList.art', { title: '文章列表', articles: data, count } );
-            // console.log(count)
             number = count;
         })
         ctx.body = {

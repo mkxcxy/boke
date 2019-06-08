@@ -6,6 +6,7 @@ const path = require('path');
 function resolve(dir) {
     return path.join(__dirname, dir)
 }
+
 module.exports = {
     // 项目部署的基础路径
     // 我们默认假设你的应用将会部署在域名的根部，
@@ -14,8 +15,16 @@ module.exports = {
     // 指定子路径。比如，如果你的应用部署在
     // https://www.foobar.com/my-app/
     // 那么将这个值改为 `/my-app/`
-    baseUrl: '/',
+    baseUrl: './',
 
+    configureWebpack: {
+        externals: {
+            'vue': 'Vue',
+            'vuex': 'Vuex',
+            'vue-router': 'VueRouter',
+            'element-ui': 'ELEMENT'
+        },
+    },
     // 将构建好的文件输出到哪里
     outputDir: 'dist',
 
@@ -40,8 +49,8 @@ module.exports = {
 
     // 调整内部的 webpack 配置。
     // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/webpack.md
-    chainWebpack: () => { },
-    configureWebpack: () => { },
+    chainWebpack: () => {
+    },
 
     // CSS 相关选项
     css: {
@@ -76,7 +85,7 @@ module.exports = {
         port: 8888,
         https: false,
         hotOnly: false,
-        open:true,
+        open: true,
         // 查阅 https://github.com/vuejs/vue-docs-zh-cn/blob/master/vue-cli/cli-service.md#配置代理
         proxy: {
             '/api': {
@@ -88,26 +97,25 @@ module.exports = {
             }
 
         },
-        before: app => { }
-    },
-
-    configureWebpack: config => {
-        if (process.env.NODE_ENV === 'production') {
-            // 为生产环境修改配置...
-            if(process.env.npm_lifecycle_event === 'analyze'){
-                config.plugins.push(
-                    new BundleAnalyzerPlugin()
-                );
-            }
-
-        } else {
-            // 为开发环境修改配置...
+        before: app => {
         }
-
     },
+
+    // configureWebpack: config => {
+    //     if (process.env.NODE_ENV === 'production') {
+    //         // 为生产环境修改配置...
+    //         if(process.env.npm_lifecycle_event === 'analyze'){
+    //             config.plugins.push(
+    //                 new BundleAnalyzerPlugin()
+    //             );
+    //         }
+    //
+    //     } else {
+    //         // 为开发环境修改配置...
+    //     }
+    //
+    // },
 
     // 第三方插件的选项
-    pluginOptions: {
-
-    }
+    pluginOptions: {}
 }

@@ -3,30 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="debd94db-a3f7-417a-b9ff-546491e99fbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/configuration.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/configuration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index/type.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/api/comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/api/comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/api/new.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/api/new.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/api/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/api/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/permission.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/permission.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adminUI/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/store/getters.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/store/getters.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../adminUI/src/store/modules/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/store/modules/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/comments/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/comments/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/friendship/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/friendship/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/layout/components/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/layout/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/menu1-1/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/menu1-2/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/menu1-2/menu1-2-1/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/menu1-2/menu1-2-2/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu1/menu1-3/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/nested/menu2/index.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/permissions/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/permissions/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/types/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/types/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/layout/components/Sidebar/SidebarItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/layout/components/Sidebar/SidebarItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/navbar/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/navbar/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/src/views/swipt/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/src/views/swipt/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adminUI/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../adminUI/vue.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+            <state relative-caret-position="953">
+              <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -51,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/index/type.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            <state relative-caret-position="136">
+              <caret line="46" selection-start-line="46" selection-end-line="57" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -61,7 +49,52 @@
         <entry file="file://$PROJECT_DIR$/routes/index/new.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index/users.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index/swipt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="69" column="1" lean-forward="true" selection-start-line="46" selection-end-line="69" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index/navbar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/index/friendship.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" selection-start-line="4" selection-end-line="26" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -164,8 +197,8 @@
         <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/config/configuration.js" />
         <option value="$PROJECT_DIR$/models/getUserInfo.js" />
-        <option value="$PROJECT_DIR$/routes/index/users.js" />
         <option value="$PROJECT_DIR$/routes/index/type.js" />
+        <option value="$PROJECT_DIR$/routes/index/users.js" />
       </list>
     </option>
   </component>
@@ -187,17 +220,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="admin" type="b2602c69:ProjectViewProjectNode" />
@@ -223,12 +252,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../adminUI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../gongzuo/site" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -356,17 +384,27 @@
       <workItem from="1558108834257" duration="731000" />
       <workItem from="1558111586138" duration="9000" />
       <workItem from="1558316025504" duration="5249000" />
+      <workItem from="1558343840331" duration="614000" />
+      <workItem from="1558392357874" duration="44000" />
+      <workItem from="1558489308594" duration="1018000" />
+      <workItem from="1558533132574" duration="82000" />
+      <workItem from="1558879749768" duration="1810000" />
+      <workItem from="1558960636886" duration="8000" />
+      <workItem from="1558960651702" duration="1592000" />
+      <workItem from="1559010296228" duration="227000" />
+      <workItem from="1559010945116" duration="657000" />
+      <workItem from="1559012600399" duration="23000" />
+      <workItem from="1559909857322" duration="4778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329519000" />
+    <option name="totallyTimeSpent" value="340372000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7182131" visible="true" weight="0.14332893" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7182131" visible="true" weight="0.33553502" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" sideWeight="0.28178695" side_tool="true" weight="0.12417437" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -380,7 +418,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43767706" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33286119" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -568,21 +606,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index/swipt.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index/getNavbar.js" />
-    <entry file="file://$PROJECT_DIR$/routes/index/navbar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/getTypeList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -591,13 +615,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index/getFriendshipLink.js" />
-    <entry file="file://$PROJECT_DIR$/routes/index/friendship.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-437">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index/getNewList.js" />
     <entry file="file://$PROJECT_DIR$/routes/index/getComments.js" />
     <entry file="file://$PROJECT_DIR$/routes/permissions.js" />
@@ -643,24 +660,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/configuration.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="499">
           <caret line="66" column="17" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -671,24 +674,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="89" column="39" lean-forward="true" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index/new.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="44" lean-forward="true" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="953">
+          <caret line="89" column="39" selection-start-line="89" selection-start-column="39" selection-end-line="89" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index/swipt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="69" column="1" lean-forward="true" selection-start-line="46" selection-end-line="69" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index/navbar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="36" column="65" lean-forward="true" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index/friendship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" selection-start-line="4" selection-end-line="26" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/index/type.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        <state relative-caret-position="136">
+          <caret line="46" selection-start-line="46" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>

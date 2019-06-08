@@ -180,10 +180,10 @@
             },
             //编辑单个用户
             handleEdit: function (value) {
-                this.method='put';
-                this.title='编辑用户';
-                this.dialogFormVisible=true;
-                this.form=value;
+                this.method = 'put';
+                this.title = '编辑用户';
+                this.dialogFormVisible = true;
+                this.form = value;
             },
         },
         created() {

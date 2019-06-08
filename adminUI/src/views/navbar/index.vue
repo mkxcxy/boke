@@ -59,7 +59,7 @@
             </el-table-column>
         </el-table>
         <!--弹出框-->
-        <el-dialog title="新增轮播" :visible.sync="dialogFormVisible">
+        <el-dialog :title="title" :visible.sync="dialogFormVisible">
             <el-form class="pl-1  ">
                 <el-form-item label='路由简介'>
                     <el-input v-model="form.name" autocomplete="off"></el-input>
@@ -122,10 +122,10 @@
             }
         },
         methods: {
-            //新增用户
+            //新增路由
             add: function () {
                 this.method = 'post';
-                this.title = '新增用户';
+                this.title = '新增路由';
                 this.form = {
                     name: '',
                     link: '',
@@ -159,7 +159,7 @@
             //删除单个用户（非管理）
             handleDelete: function (id) {
                 let that = this;
-                this.$confirm('此操作将永久删除该轮播, 是否继续?', '提示', {
+                this.$confirm('此操作将永久删除该路由, 是否继续?', '提示', {
                     confirmButtonText: '确定',
                     cancelButtonText: '取消',
                     type: 'warning'
@@ -179,7 +179,7 @@
             //编辑单个用户
             handleEdit: function (value) {
                 this.method = 'put';
-                this.title = '编辑用户';
+                this.title = '编辑路由';
                 this.dialogFormVisible = true;
                 this.form = value;
             },

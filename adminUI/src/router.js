@@ -1,9 +1,9 @@
-import Vue from 'vue'
+// import Vue from 'vue'
 import Router from 'vue-router'
 /* Layout */
 import Layout from './views/layout/Layout'
 
-Vue.use(Router)
+// Vue.use(Router)
 
 
 //全局设置路由
@@ -48,7 +48,7 @@ export const constantRouterMap = [
                 path: 'index',
                 name: 'Swipt',
                 component: () => import('@/views/swipt/index'),
-                meta: {title: '轮播', icon: 'el-icon-platform-eleme'}
+                meta: {title: '轮播', icon: 'fa fa-user-circle'}
             }
         ]
     },
@@ -130,7 +130,7 @@ export const constantRouterMap = [
     {path: '*', redirect: '/404', hidden: true}
 ];
 export default new Router({
-    mode: "history",
+    mode: "hash",
     scrollBehavior: () => ({y: 0}),
     routes: constantRouterMap
 });
