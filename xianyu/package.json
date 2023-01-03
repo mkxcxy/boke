@@ -16,7 +16,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "cross-env": "^5.2.0",
     "koa": "^2.6.2",
-    "nuxt": "^2.4.0",
+    "nuxt": "^2.15.8",
     "vee-validate": "^2.2.6",
     "vuetify": "^1.5.5",
     "vuetify-loader": "^1.2.1"
@@ -31,6 +31,6 @@
     "nodemon": "^1.18.9",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue-jest": "^3.0.3"
+    "vue-jest": "^4.0.1"
   }
 }
